@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./css/style1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style1.css" type="text/css">
+</head>
+<body>
+  <div class="container-luca">
+    <img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/luca-logo.svg" class="centered">
+  </div>
+
+<!--automatic top slideshow-->
+<div class="show1">
+  <div class="slide-container">
+    <div class="effect slide">
+      <img src="main_background.jpg"/>
+    </div>
+    <div class="effect slide">
+      <img src="img1.jpg"/>
+    </div>
+    <div class="effect slide">
+      <img src="img2.jpg"/>
+    </div>
+    <div class="effect slide">
+      <img src="img3.jpg"/>
+    </div>
+    <div class="effect slide">
+      <img src="img4.jpg"/>
+    </div>
+    <div class="effect slide">
+      <img src="img5.jpg"/>
+    </div>
+    <div class="effect slide">
+      <img src="img6.jpg"/>
+    </div>
+    <div class="bottom-right">
+      <a href="tel:02038593000">020 3859 3000</a>
+      <a href="https://www.google.co.uk/maps/place/Luca/@51.5221936,-0.103368,17z/data=!4m13!1m7!3m6!1s0x48761b511729cc2b:0x2c2da3589331eaf9!2s88+St+John+St,+Clerkenwell,+London+EC1M+4EL!3b1!8m2!3d51.5221836!4d-0.1020119!3m4!1s0x48761b51100724a7:0xc779912dc42da7d4!8m2!3d51.5222538!4d-0.1018462" target="_blank">
+                  88 St John St, Clerkenwell, London EC1M 4EH
+                  </a>
+    </div>
+    <div class="bottom-left">
+      <a href="https://www.instagram.com/luca.restaurant/">Instagram</a>
+    </div>
+
+    </div>
+</div>
+</div>
+<div class="dot-container">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<script>
+var index=0;
+show();
+function show(){
+  var i;
+  var slides=document.getElementsByClassName("slide");
+  for(i=0;i<slides.length;i++){
+    slides[i].style.display=" none";
+  }
+
+  index=index+1;
+  if(index>slides.length){
+    index=1;
+  }
+  slides[index-1].style.display="block";
+  setTimeout(show,4000);
+}
+</script>
+<!--ennd of automatic top slideshow-->
+
+
+
+<header>
+<!--start of nav bar-->
+<!-- reference https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp -->
+<div class="navigation">
+  <div id="navbar">
+    <div class="reservations-nav">
+    <a class="reservations-nav" href="#resevations">Reservations</a>
+  </div>
+    <a>|</a>
+    <a href="#menu">Menu</a>
+    <a>|</a>
+    <a href="#private-dining">Private Dining</a>
+    <a>|</a>
+    <a href="#christmas">Christmas</a>
+    <a>|</a>
+    <a href="#careers">Careers</a>
+  </div>
+  <script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+</div>
+<!--end of nav bar-->
+<!--menu button-->
+<!--end of menu button-->
+<!--section 1-->
+<div class="section-1">
+ <h2>British seasonal ingredients through an Italian lens</h2>
+</div>
+
+<!--end of section 1-->
+
+
+</header>
+<section>
+  <div>
+  </div>
+</secction>
+<!--restaurant container-->
+<div class="restaurant-container">
+  <div class="restaurant-icons">
+    <img class="restaurant-icons" src="icon1.jpg">
+  </div>
+  <div class="restaurant-text">
+    <h2 class="restaurant-header"><img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-restaurant.svg" alt="Restaurant"></h2>
+    <h1 class = "restaurant-p">
+      The restaurant serves high-quality ingredients from around the British Isles and Italy. Seasonal produce such as scallops form Orkney, Hebridean lamb and turbot from Cornwall. It is food that observes the established traditions of Italian cooking, but breaks the rules a little.
+    </h1>
+    <button type="button" class="block">BOOK A TABLE</button>
+  </div>
+</div>
+<!--end of restaurant container-->
+
+<!-- Christmas container-->
+<div class="christmas-container">
+  <div class="christmas-icons">
+    <img class="christmas-icons" src="icon2.jpeg">
+  </div>
+  <div class="christmas-text">
+    <h2 class="christmas-header"><img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-christmas.svg" alt="Christmas"></h2>
+    <h1 class = "christmas-p">
+      There’s something special about Christmas at Luca. Our restaurant and private dining rooms will be given a magical make over from 22nd November. We are now taking reservations for the Garden Room, Pasta Room, Terrace and main restaurant, accommodating groups of all sizes.
+    </h1>
+    <div class="christmas-button">
+<a href="https://lucarestaurant.tripleseat.com/party_request/24975">
+    <button type="button" class="christmas-block" href="https://lucarestaurant.tripleseat.com/party_request/24975">ENQUIRE</button>
+<a>
+<a href="https://luca.restaurant/wp-content/uploads/Christmas-Events-at-Luca-2022.pdf">
+    <button type="button" class="christmas-block">EVENTS BROCHURE</button>
+</a>
+  </div>
+  </div>
+</div>
+<!-- end of christmas container-->
+<!-- Luca bar container-->
+<div class="luca_bar-container">
+      <div class="luca_bar-text">
+        <h2 class="luca_bar-header"><img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-luca-bar.svg" alt="Luca Bar"></h2>
+        <h1 class="luca_bar-p">
+        Franciacorta, Negronis, Grappa & freshly shaken cocktails. Things to share – Parmesan fries, salumi, pasta. Take a seat in one of our iconic booths or at our marble bar for a drink, light bite or to settle in for the night.
+      </h1>
+        <button type="button" class="block">BOOK A TABLE</button>
+  </div>
+  <div class="luca_bar-icons">
+        <img class="luca_bar-icons"src="icon3.jpg">
+      </div>
+</div>
+<!--end of Luca bar container-->
+
+
+<!--second slideshow-->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="s_img1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="s_img2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="s_img3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="s_img4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="s_img5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="s_img6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="s_img7.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="s_img8.jpg" style="width:100%">
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div class="dot-con"style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!--end of second slideshow-->
+
+<!-- Private dining container-->
+<div class="private-container">
+  <div class="private-icons">
+        <img class="private-icons"src="icon4.jpeg">
+      </div>
+      <div class="private-text">
+        <h2 class="private-header"><img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-private-dining-2.svg" alt="Private Dining"></h2>
+        <h1 class="private-p">
+          We have three private dining spaces; The Terrace for up to twenty guests, The Pasta Room for up to ten, and The Garden Room for up to eight guests.</h1>
+        <h1 class="private-p">We can also accommodate parties for up to 14 guests on large tables in our main dining room or up to 100 guests for private hire.</h1>
+        <button type="button" class="block">ENQUIRE</button>
+  </div>
+</div>
+<!--end of Private dining container-->
+
+<!-- Gifts and experiences container-->
+<div class="gifts-container">
+  <div class="gifts-icons">
+        <img class="gifts-icons"src="icon5.jpg">
+      </div>
+      <div class="gifts-text">
+        <h2 class="gifts-header"><img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-gifts-experiences.svg" alt="Gifts and Experiences"></h2>
+        <h1 class="gifts-p">
+          We have a selection of gift vouchers and experiences available.</h1>
+        <button type="button" class="block">MORE INFO </button>
+  </div>
+</div>
+<!--end of Gifts and experiences container-->
+
+
+
+
+<!--resevations section-->
+<section class="section-resevations">
+  <div class="resevations-title">
+    <h2 class="img-titles"><img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-reservations-white.svg" alt="Reservations"></h2>
+  </div>
+  <div class="resevations-text">
+    <h2><p>To make a booking please click below.</p>
+      <p>For any other enquiries you can email us at <a href="mailto:reservations@luca.restaurant">reservations@luca.restaurant</a>. Our reservations lines are open Monday &#8211; Friday from 10 am to 5 pm.</p>
+    </h2>
+  </div>
+    <div>
+      <button class="resevations-button">Book a Table</button>
+    </div>
+  <div class="resevations-blue"></div>
+</section>
+<!--end of reservations section 1-->
+
+
+
+
+
+<!--section menu-->
+<section class="section-menus">
+  <div class="menus-title">
+    <h2 class="img-titles"><img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-menus-white.svg" alt="Menus"></h2>
+  </div>
+  <div class="menus-text">
+  <h2><p>Our menus reflect the seasons, serving the finest traditional Italian pasta dishes alongside a variety of meat and seasonal seafood.</p>
+<br>
+    <p>We operate a corkage policy of £35 per bottle and allow a maximum of 1 bottle for up to two people and 2 bottle for up to six guests.</p>
+  </h2>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div>
+  <div class="section-menus__buttons">
+    <div class="menu-buttons">
+    <button type="button" class="menu-block">ENQUIRE</button>
+    <button type="button" class="menu-block">EVENTS BROCHURE</button>
+    </div>
+    <div class="menu-buttons">
+    <button type="button" class="menu-block">ENQUIRE</button>
+    <button type="button" class="menu-block">EVENTS BROCHURE</button>
+    </div>
+    <div class="menu-buttons">
+    <button type="button" class="menu-block">ENQUIRE</button>
+    <button type="button" class="menu-block">EVENTS BROCHURE</button>
+    </div>
+    </div>
+  <div class="resevations-blue"></div>
+</section>
+<!--end of section menu-->
+
+
+
+
+
+<!--start of automatic quote slideshow-->
+<section>
+<div class="qslideshow-container">
+
+<div class="qmySlides active">
+  <div class="qmySlides__wrapper">
+    <img class ="q-title" src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-press.svg" alt="Press; Accolades">
+    <p class="q-p">Restaurant of the Year 2017<br>
+              <em>Monocle</em></p>
+    <img class="qauthor" src="https://luca.restaurant/wp-content/uploads/5a78d1e0690086599e28f84d-1.png">
+    <p class="q-enquiries">For press enquiries please contact <em><a href="mailto:media@luca.restaurant">media@luca.restaurant</a></em></p>
+  </div>
+</div>
+
+<div class="qmySlides">
+  <div class="qmySlides__wrapper">
+    <img class ="q-title" src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-press.svg" alt="Press; Accolades">
+    <p class="q-p">“Negroni, please – God that’s good, best in London probably, give us another – and a plate of those parmesan fries …”<br>
+              <em>Giles Coren, The Times</em></p>
+    <img class="qauthor" src="https://luca.restaurant/wp-content/uploads/the-times-logo_0.png">
+    <p class="q-enquiries">For press enquiries please contact <em><a href="mailto:media@luca.restaurant">media@luca.restaurant</a></em></p>
+  </div>
+</div>
+
+<div class="qmySlides">
+  <div class="qmySlides__wrapper">
+    <img class ="q-title" src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-press.svg" alt="Press; Accolades">
+    <p class="q-p">“From the airy and marble-clad bar section, to the lofty dining room, with deco-rustic fittings and billowy drapes, and the faded-palazzo loos, all burnished mirrors and taupe plaster, it’s a handsome spot.”<br>
+              <em>Time Out</em></p>
+    <img class="qauthor" src="https://luca.restaurant/wp-content/uploads/time-out-logo-png-1-e1537923655442.png">
+    <p class="q-enquiries">For press enquiries please contact <em><a href="mailto:media@luca.restaurant">media@luca.restaurant</a></em></p>
+  </div>
+</div>
+
+<div class="qmySlides">
+  <div class="qmySlides__wrapper">
+    <img class ="q-title" src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-press.svg" alt="Press; Accolades">
+    <p class="q-p">“[Luca] hasn’t just the makings of a hit, but of a classic.”<br>
+              <em>Marina O’Loughlin, The Guardian</em></p>
+    <img class="qauthor" src="https://luca.restaurant/wp-content/uploads/guardian-logo.png">
+    <p class="q-enquiries">For press enquiries please contact <em><a href="mailto:media@luca.restaurant">media@luca.restaurant</a></em></p>
+  </div>
+</div>
+
+<div class="qmySlides">
+  <div class="qmySlides__wrapper">
+    <img class ="q-title" src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-press.svg" alt="Press; Accolades">
+    <p class="q-p">Restaurant of the Year 2017<br>
+              <em>Monocle</em></p>
+    <img class="qauthor" src="https://luca.restaurant/wp-content/uploads/5a78d1e0690086599e28f84d-1.png">
+    <p class="q-enquiries">For press enquiries please contact <em><a href="mailto:media@luca.restaurant">media@luca.restaurant</a></em></p>
+  </div>
+</div>
+
+<div class="qmySlides">
+  <div class="qmySlides__wrapper">
+    <img class ="q-title" src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-press.svg" alt="Press; Accolades">
+    <p class="q-p">“Negroni, please – God that’s good, best in London probably, give us another – and a plate of those parmesan fries …”<br>
+              <em>Giles Coren, The Times</em></p>
+    <img class="qauthor" src="https://luca.restaurant/wp-content/uploads/the-times-logo_0.png">
+    <p class="q-enquiries">For press enquiries please contact <em><a href="mailto:media@luca.restaurant">media@luca.restaurant</a></em></p>
+  </div>
+</div>
+
+
+
+</div>
+<div class="qdot-container">
+  <span class="qdot" onclick="qcurrentSlide(1)"></span>
+  <span class="qdot" onclick="qcurrentSlide(2)"></span>
+  <span class="qdot" onclick="qcurrentSlide(3)"></span>
+</div>
+
+<script>
+  setInterval(function () {
+    var slider = document.querySelectorAll('.qmySlides');
+    var sliderActive = document.querySelector('.qmySlides.active')
+    for (var i = 0; i < slider.length; i++) {
+      const element = slider[i];
+      if(element === sliderActive){
+        if(slider[i + 1]){
+            console.log(element, slider[i + 1]);
+            element.classList.remove("active");
+            slider[i + 1].classList.add("active");
+          console.log("other one: ", slider[i + 1]);
+        } else if(slider[i + 1] === undefined){
+            element.classList.remove("active");
+            slider[0].classList.add("active");
+        }
+      }
+    }
+  }, 3000);
+
+
+</script>
+
+
+
+
+
+<!-- <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("qmySlides");
+    var dots = document.getElementsByClassName("qdot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" qactive", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " qactive";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+  }
+</script> -->
+</section>
+<!--end of automatic quote slideshow-->
+
+
+
+
+
+<!--Map-->
+<div class="map-container">
+      <div class="map-icons">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5204263367273!2d-0.10158790000000001!3d51.522013799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b5111a09f69%3A0x22db4f73f76175a0!2sHat%20%26%20Mitre%20Ct.%2C%20London%2C%20UK!5e0!3m2!1sen!2sde!4v1669215375365!5m2!1sen!2sde"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="map-text">
+        <h2 class="map-header"><img src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/heading-hours-location-white.svg" alt="Hours; Location"></h2>
+          <h3 class="map-h">Restaurant</h3>
+          <p class= "map-p">We are open for dinner Tuesday to Saturday from 6 pm and for lunch Wednesday to Saturday from 12 pm to 2 pm.</p>
+          <h3 class="map-h">Location</h3>
+          <p class= "map-p">We can be found at 88 St. John Street in the heart of Clerkenwell.
+
+            We are five minutes from Farringdon station. </p>
+            <div class="map-button">
+              <button type="button" class="map-block">OPEN IN MAPS</button>
+            </div>
+      </div>
+</div>
+<!--end of map-->
+
+
+
+
+
+
+
+
+
+
+<!--footer-->
+<footer>
+  <p style="padding-top: 50px"><img class="footer-title" src="https://luca.restaurant/wp-content/themes/luca-v2/assets/img/clove-club-group-logo.svg"></p>
+  <p class="footer-p">The Clove Club Group is a London-based restaurant group which includes The Clove Club and Luca.</p>
+  <p class="footer-p">The group was founded in 2012 by owners Isaac McHale, Daniel Willis & Johnny Smith.</p>
+  <p class="footer-p">Sign up to the newsletter to stay in touch.</p>
+  <form action="/action_page.php">
+  <br>
+  <input type="text" id="fname" name="fname" value="FIRST NAME"><br>
+  <br>
+  <input type="text" id="lname" name="lname" value="LAST NAME"><br>
+  <br>
+  <input type="text" id="email" name="email" value="EMAIL ADDRESS"><br>
+  <br>
+  <input class="submit-button" type="submit" value="SUBSCRIBE">
+  <br>
+  <br>
+  <a href="https://e-i-b.com/">Design: EverythingInBetween</a>
+<p>Development: Benedict de Silva</p>
+<p>Privacy Policy</p>
+
+</form>
+</footer>
+<!--end of footer-->
+</body>
+</html>
